@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Calculator</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="stylesheet" href="css/main.css" type="text/css" />
+</head>
+
+
+
+<!-- <input type="checkbox" name="" id="check" style="display:non e"> -->
+
+<body id="body">
+  <form name="calculator">
+    <div class="calculator-div">
+      <div class="container">
+        <div class="item">
+          <div class="display-div">
+            <input type="text" name="display" id="display" disabled>
+            <input type="button" id="clear" name="clear" value="c" onclick="calculator.display.value = ''">
+          </div>
+          <div class="btn-div">
+
+            <div class="row">
+              <input type="button" name="one" value="1" onclick="calculator.display.value += '1'">
+              <input type="button" name="two" value="2" onclick="calculator.display.value += '2'">
+
+
+              <input type="button" name="three" value="3" onclick="calculator.display.value += '3'">
+
+
+              <input type="button" class="operator" name="plus" value="+" onclick="calculator.display.value += '+'">
+            </div>
+
+            <div class="row">
+              <input type="button" name="four" value="4" onclick="calculator.display.value += '4'">
+
+
+              <input type="button" name="five" value="5" onclick="calculator.display.value += '5'">
+
+
+              <input type="button" name="six" value="6" onclick="calculator.display.value += '6'">
+
+
+              <input type="button" class="operator" name="minus" value="-" onclick="calculator.display.value += '-'">
+            </div>
+
+            <div class="row">
+              <input type="button" name="seven" value="7" onclick="calculator.display.value += '7'">
+
+
+              <input type="button" name="eight" value="8" onclick="calculator.display.value += '8'">
+
+
+              <input type="button" name="nine" value="9" onclick="calculator.display.value += '9'">
+
+
+              <input type="button" class="operator" name="times" value="x" onclick="calculator.display.value += '*'">
+            </div>
+
+            <div class="row">
+              <input type="button" class="operator" name="div" value="." onclick="calculator.display.value += '.'">
+
+
+              <input type="button" name="zero" value="0" onclick="calculator.display.value += '0'">
+
+
+              <input type="button" name="doit" value="="
+                onclick="calculator.display.value = eval(calculator.display.value)">
+
+
+              <input type="button" class="operator" name="div" value="/" onclick="calculator.display.value += '/'">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div class="contaner">
+    <div class="item">
+      <a href="https://github.com/jovick-coder/javaScript-calculator">git hub</a>
+      <label for="check" id="label" class="label"></label>
+    </div>
+    <div class="item">
+
+    </div>
+  </div>
+
+  <input type="checkbox" name="" id="check" onclick="change()" style="display: none;">
+</body>
+
+
+
+<script src="js/main.js"></script>
+
+</html>

@@ -1,0 +1,83 @@
+.calculator-div {
+  /* border: 2px solid red; */
+  /* height: 500px; */
+  display: block;
+  width: 100%;
+}
+.container {
+  /* border: 2px solid blue; */
+  display: flex;
+}
+.item {
+  max-width: 250px;
+  /* border: 2px solid black; */
+  width: 50%;
+  margin: 10px auto;
+}
+.display-div {
+  /* border: 2px solid green; */
+  display: flex;
+}
+
+.display-div #display {
+  width: 80%;
+  height: 50px;
+}
+.display-div #clear {
+  width: 30%;
+
+  height: 55px;
+  border-radius: 3px;
+  border: none;
+  margin: 0px 3px;
+  /* display: block; */
+  background-color: red;
+  color: #ffffff;
+}
+.row {
+  width: 100%;
+  display: flex;
+}
+.row input {
+  width: 25%;
+  margin: 2px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+}
+input[type='button']:hover {
+  background-color: rgb(36, 36, 36);
+  color: #ffffff;
+}
+
+.dark-mode {
+  --main-bg-color: black;
+  --main-txt-color: white;
+  background-color: var(--main-bg-color);
+  color: var(--main-txt-color);
+}
+.light-mode {
+  background-color: var(--main-bg-color);
+  color: var(--main-txt-color);
+}
+.dark-mode {
+  --main-bg-color: black;
+  --main-txt-color: white;
+  background-color: var(--main-bg-color);
+  color: var(--main-txt-color);
+}
+label::after {
+  content: '☀';
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ddd;
+}
+#check:checked ~ #label::after {
+  content: '☀';
+  background-color: rgb(114, 114, 114);
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 5px;
+}
