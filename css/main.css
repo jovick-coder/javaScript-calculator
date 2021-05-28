@@ -22,9 +22,14 @@
 .display-div #display {
   width: 80%;
   height: 50px;
+  margin: 0px 0px 0px 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--main-btn-color, #ddd);
+  color: var(--main-btn-txt-color, #000000);
 }
 .display-div #clear {
-  width: 30%;
+  width: 25%;
 
   height: 55px;
   border-radius: 3px;
@@ -44,6 +49,8 @@
   height: 50px;
   border-radius: 5px;
   border: none;
+  background-color: var(--main-btn-color, #ddd);
+  color: var(--main-btn-txt-color, #000000);
 }
 input[type='button']:hover {
   background-color: var(--main-btn-hover-bg-color, black);
@@ -59,6 +66,8 @@ body {
   --main-bg-color: rgb(33, 33, 33);
   --main-txt-color: white;
   --main-btn-hover-bg-color: rgb(130, 130, 130);
+  --main-btn-color: rgb(112, 112, 112);
+  --main-btn-txt-color: rgb(255, 247, 247);
 }
 .light-mode {
   background-color: var(--main-bg-color);
